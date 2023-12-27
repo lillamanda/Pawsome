@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/logo.png" alt="Oldagram logo">
+            <button id="add-btn">
+                <img src="images/addbtn.png" alt="Add new post">
+            </button>
+            <!-- <img class="avatar" src="images/user-avatar.png" alt="user avatar"> -->
+        </header>
+
+        <main>
+            <section id="feed">
+                <!-- <div class="post-container">
+                    <div class="poster-info">
+                        <img class="avatar" src="images/avatar-vangogh.jpg" alt="(poster-name)s avatar">
+                        <h3 class="bold">Vincent van Gogh
+                            <span class="small">Zundert, Netherlands</span>
+                        </h3>                       
+                    </div>
+
+                    <img class="posted-img" src="images/post-vangogh.jpg" alt="(poster-name)s avatar: (comment)">
+
+                    <button class="icon-btn"><img src="images/icon-heart.png" alt="like this post"></button>
+                    <button class="icon-btn"><img src="images/icon-comment.png" alt="comment this post"></button>
+                    <button class="icon-btn"><img src="images/icon-dm.png" alt="share this post"></button>
+
+                    <p class="bold"> 21,492 likes</p>
+
+                    <p>
+                        <span class="bold">vincey1853</span> 
+                        just took a few mushrooms lol
+                    </p>
+                </div> -->
+
+            </section>
+            
+            <div id="add-post-modal" class="modal">
+                <div class="top-modal-content">
+                    <div id="close-modal-div">
+                        <button id="close-modal-btn">
+                            <img src="images/addbtn.png" alt="close">
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-content">
+                    <form>
+                        <label for="input-file" id="drop-area">
+                            <!-- only accepts images -->
+                            <input type="file" accept="image/*" id="input-file" hidden>
+                            <div id="img-view">
+                                <img src="images/uploadIcon.png">
+                                <p>Drag and drop or click here <br> to upload image</p>
+                                <span>Upload any images from desktop</span>
+                            </div>
+
+                        </label>
+
+                        <div class="input-field">
+                            <label for="ap-comment">Comment</label>
+                            <textarea id="ap-comment" name="comment" placeholder="add your comment"></textarea>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="ap-name">Name</label>
+                            <input type="text" id="ap-name" name="name" placeholder="name">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="ap-location">Location</label>
+                            <input type="text" id="ap-location" name="location" placeholder="location">
+                        </div>
+
+                        <!-- <div class="input-field">
+                            <label for="ap-username">Username</label>
+                            <input type="text" id="ap-username" name="username" placeholder="username">
+                        </div> -->
+
+                        <div class="input-field" id="avatar-selection">
+
+                        </div>
+
+                        <div>
+                            <button type="submit" id="ap-submit-btn">Submit</button>
+                        </div>
+ 
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
